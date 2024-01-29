@@ -10,7 +10,7 @@ namespace Модуль3
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter your name:");
+            /*Console.WriteLine("Enter your name:");
             var Name = Console.ReadLine();
             Console.WriteLine("Enter your age:");
             var age = Console.ReadLine();
@@ -18,8 +18,36 @@ namespace Модуль3
             Console.WriteLine("Enter your birthdate:");
             var birthdate = Console.ReadLine();
             Console.WriteLine($"Your birthdate is {birthdate}");
-            Console.ReadKey();
+            Console.ReadKey();*/
+            Console.WriteLine("Напишите свой любимый цвет на английском с маленькой буквы");
 
-        }
+            var color = Console.ReadLine();
+
+            if (color == "red")
+            {
+                Console.BackgroundColor = ConsoleColor.Red;
+                Console.ForegroundColor = ConsoleColor.Black;
+
+                Console.WriteLine("Your color is red!");
+                Console.ReadKey();
+            }
+
+            else if (color == "green")
+            {
+                Console.BackgroundColor = ConsoleColor.Green;
+                Console.ForegroundColor = ConsoleColor.Black;
+
+                Console.WriteLine("Your color is green!");
+                Console.ReadKey();
+            }
+            else
+            {
+                Console.BackgroundColor = ConsoleColor.Cyan;
+                Console.ForegroundColor = ConsoleColor.Black;
+
+                Console.WriteLine("Your color is cyan!");
+                Console.ReadKey();
+
+            }
     }
 }
